@@ -11,28 +11,23 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 public class stepDefinition {
 
-    @Given("^user is on login page$")
-    public void user_is_on_login_page() throws Throwable {
-        System.out.println("user is no login page");
-    }
-    @When("^user enters username \"([^\"]*)\", password \"([^\"]*)\"and clicks on login button$")
-    public void user_enters_username_password_and_clicks_on_login_button(String arg1, String arg2) throws Throwable {
-        // Express the Regexp above with the code you wish you had
-      System.out.println(arg1);
-      System.out.println(arg2);
-    }
+	@Given("^user is on login page$")
+	public void user_is_on_login_page() throws Throwable {
+	    // Express the Regexp above with the code you wish you had
+	    System.out.println("a");
+	}
 
-    @Then("^home page should be displayed$")
-    public void home_page_should_be_displayed() throws Throwable {
-       System.out.println("home page is displayed");
-      
-    }
+	@When("^user enters credentials$")
+	public void user_enters_credentials() throws Throwable {
+	    // Express the Regexp above with the code you wish you had
+		System.out.println("ab");
+	}
 
-    @Then("^cards page should be displayed is \"([^\"]*)\"$")
-    public void cards_page_should_be_displayed_is(String arg1) throws Throwable {
-        // Express the Regexp above with the code you wish you had
-       System.out.println(arg1);
-    }
+	@Then("^user signing$")
+	public void user_signing() throws Throwable {
+	    // Express the Regexp above with the code you wish you had
+		System.out.println("abc");
+	}
 
 
 }
