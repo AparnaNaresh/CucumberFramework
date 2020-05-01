@@ -12,7 +12,9 @@ Scenario: Login to application with username and password
 	
 	# similar kind of steps should not be present in feature file
 	
+
 	# Data Driven Testing 
+
 Scenario Outline: 
 
 	Given user is on login page 
@@ -27,7 +29,7 @@ Scenario Outline:
 		
 		
 		#Table - using DataTable, here no headers
-		
+
 Scenario: 
 	Given user is on login page 
 	When user enters user credentials 
@@ -35,7 +37,7 @@ Scenario:
 		|user2 | pwd2 |
 	Then user signing 
 	
-	
+
 # Table example by passing headers
 #Datatables with Maps..
 Scenario:

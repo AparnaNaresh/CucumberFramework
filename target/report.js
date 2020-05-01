@@ -1,348 +1,143 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/java/features/Tags.feature");
 formatter.feature({
   "line": 1,
-  "name": "Application Login",
+  "name": "Tags",
   "description": "",
-  "id": "application-login",
+  "id": "tags",
   "keyword": "Feature"
 });
+formatter.before({
+  "duration": 915800,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 953900,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 279900,
+  "status": "passed"
+});
 formatter.scenario({
-  "line": 3,
-  "name": "Login to application with username and password",
+  "line": 4,
+  "name": "smoke",
   "description": "",
-  "id": "application-login;login-to-application-with-username-and-password",
+  "id": "tags;smoke",
   "type": "scenario",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@Smoke"
+    }
+  ]
 });
 formatter.step({
   "line": 5,
-  "name": "user is on login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 6,
-  "name": "user enters credentials",
+  "name": "smoke",
   "keyword": "When "
 });
-formatter.step({
-  "line": 7,
-  "name": "user signing",
-  "keyword": "Then "
-});
 formatter.match({
-  "location": "stepDefinition.user_is_on_login_page()"
+  "location": "stepDefinition.smoke()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 593528200,
+  "status": "passed"
 });
-formatter.match({
-  "location": "stepDefinition.user_enters_credentials()"
+formatter.after({
+  "duration": 448400,
+  "status": "passed"
 });
-formatter.result({
-  "status": "skipped"
+formatter.after({
+  "duration": 308300,
+  "status": "passed"
 });
-formatter.match({
-  "location": "stepDefinition.user_signing()"
+formatter.after({
+  "duration": 261500,
+  "status": "passed"
 });
-formatter.result({
-  "status": "skipped"
+formatter.before({
+  "duration": 297800,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 252700,
+  "status": "passed"
 });
 formatter.scenario({
-  "line": 21,
-  "name": "",
+  "line": 8,
+  "name": "regression",
   "description": "",
-  "id": "application-login;;;2",
+  "id": "tags;regression",
   "type": "scenario",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 7,
+      "name": "@Regression"
+    }
+  ]
 });
 formatter.step({
-  "line": 15,
-  "name": "user is on login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 16,
-  "name": "user enters \"user1\" and \"pwd1\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
+  "line": 9,
+  "name": "regression",
   "keyword": "When "
 });
-formatter.step({
-  "line": 17,
-  "name": "user signing",
-  "keyword": "Then "
-});
 formatter.match({
-  "location": "stepDefinition.user_is_on_login_page()"
+  "location": "stepDefinition.regression()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 252400,
+  "status": "passed"
 });
-formatter.match({
-  "arguments": [
-    {
-      "val": "user1",
-      "offset": 13
-    },
-    {
-      "val": "pwd1",
-      "offset": 25
-    }
-  ],
-  "location": "stepDefinition.user_enters_and(String,String)"
+formatter.after({
+  "duration": 286500,
+  "status": "passed"
 });
-formatter.result({
-  "status": "skipped"
+formatter.after({
+  "duration": 832800,
+  "status": "passed"
 });
-formatter.match({
-  "location": "stepDefinition.user_signing()"
+formatter.before({
+  "duration": 127800,
+  "status": "passed"
 });
-formatter.result({
-  "status": "skipped"
+formatter.before({
+  "duration": 238800,
+  "status": "passed"
 });
 formatter.scenario({
-  "line": 22,
-  "name": "",
+  "line": 12,
+  "name": "sanity",
   "description": "",
-  "id": "application-login;;;3",
+  "id": "tags;sanity",
   "type": "scenario",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 11,
+      "name": "@Sanity"
+    }
+  ]
 });
 formatter.step({
-  "line": 15,
-  "name": "user is on login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 16,
-  "name": "user enters \"user2\" and \"pwd2\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
+  "line": 13,
+  "name": "sanity",
   "keyword": "When "
 });
-formatter.step({
-  "line": 17,
-  "name": "user signing",
-  "keyword": "Then "
-});
 formatter.match({
-  "location": "stepDefinition.user_is_on_login_page()"
+  "location": "stepDefinition.sanity()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 150000,
+  "status": "passed"
 });
-formatter.match({
-  "arguments": [
-    {
-      "val": "user2",
-      "offset": 13
-    },
-    {
-      "val": "pwd2",
-      "offset": 25
-    }
-  ],
-  "location": "stepDefinition.user_enters_and(String,String)"
+formatter.after({
+  "duration": 85600,
+  "status": "passed"
 });
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "stepDefinition.user_signing()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 23,
-  "name": "",
-  "description": "",
-  "id": "application-login;;;4",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 15,
-  "name": "user is on login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 16,
-  "name": "user enters \"user3\" and \"pwd3\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 17,
-  "name": "user signing",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepDefinition.user_is_on_login_page()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "user3",
-      "offset": 13
-    },
-    {
-      "val": "pwd3",
-      "offset": 25
-    }
-  ],
-  "location": "stepDefinition.user_enters_and(String,String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "stepDefinition.user_signing()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "comments": [
-    {
-      "line": 26,
-      "value": "#Table - using DataTable, here no headers"
-    }
-  ],
-  "line": 28,
-  "name": "",
-  "description": "",
-  "id": "application-login;",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 29,
-  "name": "user is on login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 30,
-  "name": "user enters user credentials",
-  "rows": [
-    {
-      "cells": [
-        "user1",
-        "pwd1"
-      ],
-      "line": 31
-    },
-    {
-      "cells": [
-        "user2",
-        "pwd2"
-      ],
-      "line": 32
-    }
-  ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 33,
-  "name": "user signing",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepDefinition.user_is_on_login_page()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "stepDefinition.user_enters_user_credentials(DataTable)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "stepDefinition.user_signing()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "comments": [
-    {
-      "line": 36,
-      "value": "# Table example by passing headers"
-    }
-  ],
-  "line": 38,
-  "name": "",
-  "description": "",
-  "id": "application-login;",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 39,
-  "name": "user is on login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 40,
-  "name": "user entering user credentials",
-  "rows": [
-    {
-      "cells": [
-        "username",
-        "password"
-      ],
-      "line": 41
-    },
-    {
-      "cells": [
-        "user1",
-        "pwd1"
-      ],
-      "line": 42
-    },
-    {
-      "cells": [
-        "user2",
-        "pwd2"
-      ],
-      "line": 43
-    }
-  ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 44,
-  "name": "user signing",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepDefinition.user_is_on_login_page()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "stepDefinition.user_entering_user_credentials(DataTable)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "stepDefinition.user_signing()"
-});
-formatter.result({
-  "status": "skipped"
+formatter.after({
+  "duration": 113900,
+  "status": "passed"
 });
 });

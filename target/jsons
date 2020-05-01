@@ -3,361 +3,230 @@
     "line": 1,
     "elements": [
       {
-        "line": 3,
-        "name": "Login to application with username and password",
+        "before": [
+          {
+            "result": {
+              "duration": 915800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 953900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.init1()"
+            }
+          },
+          {
+            "result": {
+              "duration": 279900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.taggedhooks()"
+            }
+          },
+          {
+            "result": {
+              "duration": 297800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 252700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.init1()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "smoke",
         "description": "",
-        "id": "application-login;login-to-application-with-username-and-password",
+        "id": "tags;smoke",
+        "after": [
+          {
+            "result": {
+              "duration": 448400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.taggedhooksafter()"
+            }
+          },
+          {
+            "result": {
+              "duration": 308300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.close1()"
+            }
+          },
+          {
+            "result": {
+              "duration": 261500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.close()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 593528200,
+              "status": "passed"
             },
             "line": 5,
-            "name": "user is on login page",
+            "name": "smoke",
             "match": {
-              "location": "stepDefinition.user_is_on_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "user enters credentials",
-            "match": {
-              "location": "stepDefinition.user_enters_credentials()"
+              "location": "stepDefinition.smoke()"
             },
             "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 127800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.init()"
+            }
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 238800,
+              "status": "passed"
             },
+            "match": {
+              "location": "stepDefinition.init1()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "regression",
+        "description": "",
+        "id": "tags;regression",
+        "after": [
+          {
+            "result": {
+              "duration": 286500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.close1()"
+            }
+          },
+          {
+            "result": {
+              "duration": 832800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 252400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "regression",
+            "match": {
+              "location": "stepDefinition.regression()"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
             "line": 7,
-            "name": "user signing",
-            "match": {
-              "location": "stepDefinition.user_signing()"
-            },
-            "keyword": "Then "
+            "name": "@Regression"
           }
         ]
       },
       {
-        "line": 21,
-        "name": "",
+        "line": 12,
+        "name": "sanity",
         "description": "",
-        "id": "application-login;;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
+        "id": "tags;sanity",
+        "after": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 85600,
+              "status": "passed"
             },
-            "line": 15,
-            "name": "user is on login page",
             "match": {
-              "location": "stepDefinition.user_is_on_login_page()"
-            },
-            "keyword": "Given "
+              "location": "stepDefinition.close1()"
+            }
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 113900,
+              "status": "passed"
             },
-            "line": 16,
-            "name": "user enters \"user1\" and \"pwd1\"",
             "match": {
-              "arguments": [
-                {
-                  "val": "user1",
-                  "offset": 13
-                },
-                {
-                  "val": "pwd1",
-                  "offset": 25
-                }
-              ],
-              "location": "stepDefinition.user_enters_and(String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 17,
-            "name": "user signing",
-            "match": {
-              "location": "stepDefinition.user_signing()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 22,
-        "name": "",
-        "description": "",
-        "id": "application-login;;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 15,
-            "name": "user is on login page",
-            "match": {
-              "location": "stepDefinition.user_is_on_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 16,
-            "name": "user enters \"user2\" and \"pwd2\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "user2",
-                  "offset": 13
-                },
-                {
-                  "val": "pwd2",
-                  "offset": 25
-                }
-              ],
-              "location": "stepDefinition.user_enters_and(String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 17,
-            "name": "user signing",
-            "match": {
-              "location": "stepDefinition.user_signing()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 23,
-        "name": "",
-        "description": "",
-        "id": "application-login;;;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 15,
-            "name": "user is on login page",
-            "match": {
-              "location": "stepDefinition.user_is_on_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 16,
-            "name": "user enters \"user3\" and \"pwd3\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "user3",
-                  "offset": 13
-                },
-                {
-                  "val": "pwd3",
-                  "offset": 25
-                }
-              ],
-              "location": "stepDefinition.user_enters_and(String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 17,
-            "name": "user signing",
-            "match": {
-              "location": "stepDefinition.user_signing()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "comments": [
-          {
-            "line": 26,
-            "value": "#Table - using DataTable, here no headers"
+              "location": "stepDefinition.close()"
+            }
           }
         ],
-        "line": 28,
-        "name": "",
-        "description": "",
-        "id": "application-login;",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 150000,
+              "status": "passed"
             },
-            "line": 29,
-            "name": "user is on login page",
+            "line": 13,
+            "name": "sanity",
             "match": {
-              "location": "stepDefinition.user_is_on_login_page()"
+              "location": "stepDefinition.sanity()"
             },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 30,
-            "name": "user enters user credentials",
-            "match": {
-              "location": "stepDefinition.user_enters_user_credentials(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "user1",
-                  "pwd1"
-                ],
-                "line": 31
-              },
-              {
-                "cells": [
-                  "user2",
-                  "pwd2"
-                ],
-                "line": 32
-              }
-            ],
             "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 33,
-            "name": "user signing",
-            "match": {
-              "location": "stepDefinition.user_signing()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "comments": [
-          {
-            "line": 36,
-            "value": "# Table example by passing headers"
           }
         ],
-        "line": 38,
-        "name": "",
-        "description": "",
-        "id": "application-login;",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
+        "tags": [
           {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 39,
-            "name": "user is on login page",
-            "match": {
-              "location": "stepDefinition.user_is_on_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 40,
-            "name": "user entering user credentials",
-            "match": {
-              "location": "stepDefinition.user_entering_user_credentials(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "username",
-                  "password"
-                ],
-                "line": 41
-              },
-              {
-                "cells": [
-                  "user1",
-                  "pwd1"
-                ],
-                "line": 42
-              },
-              {
-                "cells": [
-                  "user2",
-                  "pwd2"
-                ],
-                "line": 43
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 44,
-            "name": "user signing",
-            "match": {
-              "location": "stepDefinition.user_signing()"
-            },
-            "keyword": "Then "
+            "line": 11,
+            "name": "@Sanity"
           }
         ]
       }
     ],
-    "name": "Application Login",
+    "name": "Tags",
     "description": "",
-    "id": "application-login",
+    "id": "tags",
     "keyword": "Feature",
-    "uri": "Login.feature"
+    "uri": "src/test/java/features/Tags.feature"
   }
 ]
