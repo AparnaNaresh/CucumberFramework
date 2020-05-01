@@ -9,9 +9,9 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions
 (
-		features="src/test/java/features/Login.feature", glue="stepDefinitions/stepDefinition")
+		features="src/test/java/features/parametrization.feature", glue="stepDefinitions/Parametrization")
 
-public class TestRunner {
+public class ParametrizationTestRunner {
 	
 	
 
